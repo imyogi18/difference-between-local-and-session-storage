@@ -1,0 +1,126 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif; /* Added a default font */
+        background-color: pink; /* Applied to the body */
+    }
+
+    .container {
+        padding: 20px;
+        display: flex;
+        gap: 50px;
+        justify-content: center; /* Center aligning the flex items */
+    }
+
+    .heading {
+        text-align: center; /* Center align heading */
+        margin-bottom: 20px; /* Added margin for spacing */
+    }
+
+    .content {
+        display: flex;
+        gap: 50px;
+    }
+
+    .div1 {
+        flex: 1; /* Flex to occupy equal space */
+        background-color: #f0f0f0; /* Background color for each section */
+        padding: 20px;
+        border: 2px solid #050404; /* Border color */
+    }
+
+    .head {
+        margin-bottom: 10px; /* Added margin for spacing */
+    }
+
+    .data ul {
+        list-style: none;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .data li {
+        border-bottom: 1px solid #ccc; /* Separating list items with border */
+        padding: 10px 0;
+    }
+
+    .data li:last-child {
+        border-bottom: none; /* No border for the last item */
+    }
+
+    .data a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    h3 {
+        text-align: center;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Your corrected CSS styles here */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Difference between Session Storage and Local Storage</h2>
+        </div>
+
+        <div class="content">
+            <div class="div1">
+                <div class="head">
+                    <h3>Session Storage</h3>
+                </div>
+                <div class="data">
+                    <ul>
+                        <li>Temporary storage</li>
+                        <li>Data lost on browser close</li>
+                        <li>Limited to 5MB storage</li>
+                        <li>Accessible only in current tab/window</li>
+                        <li>Stored in memory</li>
+                        <li>Suitable for temporary data</li>
+                        <li>Data cleared on session end</li>
+                        <li>Faster access times</li>
+                        <li>Suitable for small amounts of data</li>
+                        <li>Not secure for sensitive data</li>
+                        <li><a href="index.html">Session Storage Example</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="div1">
+                <div class="head">
+                    <h3>Local Storage</h3>
+                </div>
+                <div class="data">
+                    <ul>
+                        <li>Persistent storage</li>
+                        <li>Data persists on browser close</li>
+                        <li>Larger storage capacity (10MB)</li>
+                        <li>Accessible across multiple tabs/windows</li>
+                        <li>Stored in file or database</li>
+                        <li>Suitable for long-term data</li>
+                        <li>Data remains until explicitly cleared</li>
+                        <li>Slower access times</li>
+                        <li>Suitable for larger amounts of data</li>
+                        <li>More secure than session storage</li>
+                        <li><a href="Local Storage/index.html">Local Storage Example</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
